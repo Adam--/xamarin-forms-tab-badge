@@ -27,6 +27,12 @@ namespace Plugin.Badge.Sample
                     {
                         new Button
                         {
+                            Text = "Badge bug",
+                            Command = new Command(() => MainPage = new NavigationPage(new TabbedPageBug())),
+                            VerticalOptions = LayoutOptions.Center
+                        },
+                        new Button
+                        {
                             Text = "Tabbed page as root",
                             Command = new Command(CreateTabedPageAsRoot),
                             VerticalOptions = LayoutOptions.Center

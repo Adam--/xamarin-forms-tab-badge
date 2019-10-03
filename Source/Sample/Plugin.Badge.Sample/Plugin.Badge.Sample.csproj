@@ -17,6 +17,9 @@
     <ProjectReference Include="..\..\Plugin.Badge.Abstractions\Plugin.Badge.Abstractions.csproj" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Update="TabbedPageBug.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\GenericBadgeTab.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

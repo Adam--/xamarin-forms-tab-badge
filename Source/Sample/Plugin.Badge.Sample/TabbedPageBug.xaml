@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage
+    x:Class="Plugin.Badge.Sample.TabbedPageBug"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:abstractions="clr-namespace:Plugin.Badge.Abstractions;assembly=Plugin.Badge.Abstractions"
+    xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <TabbedPage.ToolbarItems>
+        <ToolbarItem Clicked="AddTabLeftMenuItem_OnClicked" Text="Left +" />
+        <ToolbarItem Clicked="RemoveTabLeftMenuItem_OnClicked" Text="Left -" />
+        <ToolbarItem Clicked="AddTabRightMenuItem_OnClicked" Text="Right +" />
+        <ToolbarItem Clicked="RemoveTabRightMenuItem_OnClicked" Text="Right -" />
+    </TabbedPage.ToolbarItems>
+
+    <ContentPage
+        Title="1"
+        abstractions:TabBadge.BadgeColor="GreenYellow"
+        abstractions:TabBadge.BadgeText="1">
+        <Label Text="1" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black"/>
+    </ContentPage>
+    <ContentPage
+        Title="2"
+        abstractions:TabBadge.BadgeColor="#2F6DFF"
+        abstractions:TabBadge.BadgeText="2">
+        <Label Text="2" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black"/>
+    </ContentPage>
+    <ContentPage Title="3" >
+        <Label Text="3" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black"/>
+    </ContentPage>
+    <ContentPage
+        Title="4"
+        abstractions:TabBadge.BadgeColor="#FF992F"
+        abstractions:TabBadge.BadgeText="4">
+        <Label Text="4" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black"/>
+    </ContentPage>
+    <ContentPage Title="5">
+        <Label Text="5" VerticalOptions="Center" HorizontalOptions="Center" TextColor="Black"/>
+    </ContentPage>
+</TabbedPage>
